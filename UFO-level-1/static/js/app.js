@@ -1,11 +1,14 @@
-// from data.js
-var tableData = data;
+// define variable and import data from data.js
+let tableData = data,
+    button = d3.select("#filter-btn"),
+    reset = d3.select("#reset-btn")
+    form = d3.select("form"),
+    tbody = d3.select("tbody");
+
+
 console.log(tableData);
 
 // YOUR CODE HERE!
-
-// reference table
-let tbody = d3.select("tbody")
 
 // loop through data and append values
 data.forEach(ufoReport => {
@@ -15,6 +18,8 @@ data.forEach(ufoReport => {
         console.log(value);
     });
 });
+
+// 
 
 
     
